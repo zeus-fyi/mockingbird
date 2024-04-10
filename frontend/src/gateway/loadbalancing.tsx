@@ -1,5 +1,6 @@
 import {hestiaApi} from './axios/axios';
-const sessionID = "fake"
+import {configService} from "../config/config";
+const sessionID = configService.getmMockingbirdBearerToken()
 
 class LoadBalancingApiGateway {
     async getEndpoints(): Promise<any>  {
@@ -11,6 +12,7 @@ class LoadBalancingApiGateway {
                 },
                 withCredentials: true,
             }
+            console.log(sessionID, 'sessionID')
             return await hestiaApi.get(url, config)
         } catch (exc) {
             console.error('error sending get customer endpoints request');

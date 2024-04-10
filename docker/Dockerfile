@@ -3,13 +3,12 @@ FROM node:16-buster AS src_builder
 WORKDIR /app
 
 # Copy the package.json and package-lock.json files into the container
-COPY apps/mockingbird/frontend/package*.json ./
+COPY ./frontend/package*.json ./
 
 # Install any needed packages
 RUN npm ci
 
-# Copy the rest of the application code into the container
-COPY apps/mockingbird/frontend/ ./
+COPY ./frontend/ ./
 
 # Build the React app for production
 RUN npm run build --nomaps

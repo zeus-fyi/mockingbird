@@ -92,6 +92,7 @@ import {Schemas} from "./Schemas";
 import {JsonSchemaDefinition, JsonSchemaField} from "../../redux/ai/ai.types.schemas";
 import {EvalFn, EvalMetric} from "../../redux/ai/ai.types.evals";
 import {TriggerAction} from "../../redux/ai/ai.types.triggers";
+import MainListItems from "../dashboard/listItems";
 
 const mdTheme = createTheme();
 
@@ -1577,7 +1578,7 @@ function WorkflowEngineBuilder(props: any) {
                     </Toolbar>
                     <Divider />
                     <List component="nav">
-                        {/*<MainListItems />*/}
+                        <MainListItems />
                         <Divider sx={{ my: 1 }} />
                     </List>
                 </Drawer>

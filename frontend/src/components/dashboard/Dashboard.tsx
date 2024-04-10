@@ -115,11 +115,11 @@ function DashboardContent() {
                         >
                             Dashboard
                         </Typography>
-                        <Button
-                            color="inherit"
-                            onClick={handleLogout}
-                        >Logout
-                        </Button>
+                        {/*<Button*/}
+                        {/*    color="inherit"*/}
+                        {/*    onClick={handleLogout}*/}
+                        {/*>Logout*/}
+                        {/*</Button>*/}
                     </Toolbar>
                 </AppBar>
                 <Drawer variant="permanent" open={open}>

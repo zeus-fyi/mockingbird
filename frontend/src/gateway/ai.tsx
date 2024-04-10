@@ -13,7 +13,8 @@ import {Assistant, Retrieval} from "../redux/ai/ai.types.retrievals";
 import {JsonSchemaDefinition} from "../redux/ai/ai.types.schemas";
 import {EvalFn} from "../redux/ai/ai.types.evals";
 import {TriggerAction, TriggerActionApprovalPutRequest} from "../redux/ai/ai.types.triggers";
-const sessionID = "fake"
+import {configService} from "../config/config";
+const sessionID = configService.getmMockingbirdBearerToken()
 
 class AiApiGateway {
     async searchRequest(params: AiSearchParams): Promise<any> {

@@ -18,9 +18,8 @@ export const App = () => {
         <Provider store={store}>
             <BrowserRouter>
                 <Routes>
-                    <Route path="ai" element={<AiWorkflowsDashboard />}>
-                        <Route path="workflow/builder" element={<AiWorkflowsEngineBuilderDashboard />} />
-                    </Route>
+                    <Route path="/" element={<AiWorkflowsDashboard />} />
+                    <Route path="/ai/workflow/builder" element={<AiWorkflowsEngineBuilderDashboard />} />
                 </Routes>
             </BrowserRouter>
         </Provider>

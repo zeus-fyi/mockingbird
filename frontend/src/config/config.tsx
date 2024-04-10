@@ -6,6 +6,7 @@ class ConfigService  {
     private readonly stripePubKey: string;
     private readonly irisApiUrl: string;
     private readonly googClientID: string;
+    private readonly mockingbirdBearerToken: string;
 
     constructor() {
         this.apiUrl = process.env.REACT_APP_BACKEND_ENDPOINT || 'http://localhost:9002';
@@ -15,6 +16,10 @@ class ConfigService  {
         this.heraApiUrl = process.env.REACT_APP_HERA_BACKEND_ENDPOINT || 'http://localhost:9008';
         this.googClientID = process.env.REACT_APP_GOOGLE_API_TOKEN || '';
         this.stripePubKey = process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY || '';
+        this.mockingbirdBearerToken = process.env.REACT_APP_MOCKINGBIRD_BEARER_TOKEN || '';
+    }
+    public getmMockingbirdBearerToken(): string {
+        return this.mockingbirdBearerToken;
     }
     public getApiUrl(): string {
         return this.apiUrl;
