@@ -1,3 +1,7 @@
+# Mockingbird Front End ##
+
+This repo contains the workflow builder and UI/UX React source code so you can easily build and extend off to jump start your own mockingbird use case.
+
 # Documentation ##
 
 https://docs.zeus.fyi
