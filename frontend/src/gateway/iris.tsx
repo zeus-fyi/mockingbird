@@ -1,6 +1,6 @@
 import {irisApi} from './axios/axios';
 import {configService} from "../config/config";
-const sessionID = configService.getmMockingbirdBearerToken()
+const sessionID = configService.getMockingbirdBearerToken()
 
 class IrisLoadBalancingApiGateway {
     async sendJsonRpcRequest(routeGroup: string, payload: any, planName: string, ext: string): Promise<any>  {

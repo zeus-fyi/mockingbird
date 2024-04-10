@@ -18,7 +18,7 @@ class ConfigService  {
         this.stripePubKey = process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY || '';
         this.mockingbirdBearerToken = process.env.REACT_APP_MOCKINGBIRD_BEARER_TOKEN || '';
     }
-    public getmMockingbirdBearerToken(): string {
+    public getMockingbirdBearerToken(): string {
         return this.mockingbirdBearerToken;
     }
     public getApiUrl(): string {

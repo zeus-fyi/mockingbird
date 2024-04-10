@@ -14,7 +14,7 @@ import {JsonSchemaDefinition} from "../redux/ai/ai.types.schemas";
 import {EvalFn} from "../redux/ai/ai.types.evals";
 import {TriggerAction, TriggerActionApprovalPutRequest} from "../redux/ai/ai.types.triggers";
 import {configService} from "../config/config";
-const sessionID = configService.getmMockingbirdBearerToken()
+const sessionID = configService.getMockingbirdBearerToken()
 
 class AiApiGateway {
     async searchRequest(params: AiSearchParams): Promise<any> {

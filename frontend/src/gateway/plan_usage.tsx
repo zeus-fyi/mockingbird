@@ -1,6 +1,6 @@
 import {hestiaApi} from './axios/axios';
 import {configService} from "../config/config";
-const sessionID = configService.getmMockingbirdBearerToken()
+const sessionID = configService.getMockingbirdBearerToken()
 
 class PlanDetailsApiGateway {
     async getPlanDetails(): Promise<any>  {
