@@ -2,6 +2,10 @@
 
 This repo contains the workflow builder and UI/UX React source code so you can easily build and extend off to jump start your own mockingbird use case.
 
+# UI Quickstart Tutorial ##
+
+https://github.com/zeus-fyi/mockingbird/assets/17446735/e1316950-1349-4ac7-8f89-5ee5dc4ab5b3
+
 # Documentation ##
 
 https://docs.zeus.fyi
